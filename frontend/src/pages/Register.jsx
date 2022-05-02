@@ -14,19 +14,20 @@ function Register() {
     const { name, email, password, password2 } = formData
 
     const onChange = (e) => {
-
+        // use input id to change input state
         setFormData((prevState) => ({
             ...prevState,
             [e.target.name]: e.target.value,
         }))
     }
 
+    //------------------Sign up a user-----------//
     const onSubmit = (e) => {
         e.preventDefault()
         if (password !== password2) {
             toast.error('passwords do not match')
         }
-        console.log('Hello');
+
     }
 
     return (
@@ -38,6 +39,8 @@ function Register() {
                 <p>Please create an account</p>
             </section>
 
+
+            {/* ---------------------Sign up form inputs -------------------------*/}
             <section className="form">
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
@@ -57,6 +60,8 @@ function Register() {
                     </div>
                 </form>
             </section>
+            {/* ------------------------------------------------------------------ */}
+
         </>
     )
 }

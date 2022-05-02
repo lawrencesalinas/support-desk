@@ -12,16 +12,18 @@ function Login() {
     const { email, password } = formData
 
     const onChange = (e) => {
-
+        // use input name to change input state
         setFormData((prevState) => ({
             ...prevState,
             [e.target.name]: e.target.value,
         }))
     }
 
+    // --------------------Sign in user------------------------------/
     const onSubmit = (e) => {
         e.preventDefault()
     }
+    // ----------------------------------------------------------------/
 
     return (
         <>
@@ -32,6 +34,7 @@ function Login() {
                 <p>Please log in to get support</p>
             </section>
 
+            {/* ------------Sign up form inputs ----------------------*/}
             <section className="form">
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
@@ -45,6 +48,7 @@ function Login() {
                     </div>
                 </form>
             </section>
+            {/* ----------------------------------------------------------*/}
         </>
     )
 }
