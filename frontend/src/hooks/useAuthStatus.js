@@ -10,11 +10,14 @@ export const useAuthStatus = () => {
 
   // run when user changes
   useEffect(() => {
+    // checl if user is there
     if (user) {
       setLoggedIn(true)
     } else {
       setLoggedIn(false)
     }
+
+    // if we checked the status
     setCheckingStatus(false)
   }, [user])
   return { loggedIn, checkingStatus }
