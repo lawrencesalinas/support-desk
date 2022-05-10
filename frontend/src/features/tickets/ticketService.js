@@ -15,7 +15,7 @@ const createTicket = async (ticketData, token) => {
   return response.data
 }
 
-// CGet user tickets
+// Get user tickets
 const getTickets = async (token) => {
   const config = {
     headers: {

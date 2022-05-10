@@ -3,7 +3,7 @@ const asyncHandler = require('express-async-handler')
 const User = require('../model/userModel')
 const Ticket = require('../model/ticketModel')
 
-//---------------------------GET ALL USER TICKETS----------------------------------------//
+//---------------------------GET ALL USER TICKETS-------------------------------//
 // @desc    Get user tickets
 // @route   GET  /app/tickets
 // @access  Private
