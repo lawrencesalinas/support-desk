@@ -39,6 +39,7 @@ if (process.env.NODE_ENV === 'production') {
     res.status(200).json({ message: 'Welcome to the Support Desk API' })
   })
 }
+
 app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server started on ${PORT}`))
