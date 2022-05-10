@@ -1,6 +1,26 @@
-# Support Desk App
+# Support-Desk
 
-Support ticket application built with the MERN stack. This is a project from my [React Front To Back](https://www.udemy.com/course/react-front-to-back-2022/?referralCode=4A622C7E48DB66154114) course.
+Support ticket application. Support Desk is a MERN stack project(MongoDb, Express.js, React.js, Node.js),  CRUD application that utilizes the node.js environment, Express.js to handle the server, React.js with Redux-toolkit for the frontend and MongoDb for saving data.
+
+
+
+<p align="center">
+  <!-- <img width="700" height="450" src="./build/images/tote.gif"> -->
+</p>
+
+---
+## Tech stack
+
+- MongoDb, Express.js, React.js, Node.js, Redux-toolikt
+
+## User flows
+
+As a user, I want to:
+- login or sign up to create an account
+- create a ticket
+-  view my tickets
+-  view ticket information
+-  create notes about the ticket to cimmunicate with staff
 
 ## Usage
 
