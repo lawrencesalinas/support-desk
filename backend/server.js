@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const colors = require('colors')
 const dotenv = require('dotenv').config()
 const { errorHandler } = require('./middleware/errorMiddleware')
@@ -21,14 +22,23 @@ app.use(cors(corsOptions)) // Use this after the variable declaration
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.listen(PORT, () => console.log(`Server started on ${PORT}`))
-
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello' })
-})
-
 // Routes
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
 
+// Serve frontend
+if (process.env.NODE_ENV === 'production') {
+  // Set build folder as static
+  app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+  app.get('*', (req, res) =>
+    res.sendFile(__dirnamem, '../', 'frontend', 'build', 'index.html')
+  )
+} else {
+  app.get('/', (req, res) => {
+    res.status(200).json({ message: 'Welcome to the Support Desk API' })
+  })
+}
 app.use(errorHandler)
+
+app.listen(PORT, () => console.log(`Server started on ${PORT}`))
