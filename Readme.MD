@@ -20,7 +20,7 @@ As a user, I want to:
 - create a ticket
 -  view my tickets
 -  view ticket information
--  create notes about the ticket to cimmunicate with staff
+-  create notes about the ticket to communicate with staff
 
 ## Usage
 
