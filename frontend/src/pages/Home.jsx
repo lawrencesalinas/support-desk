@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaQuestionCircle, FaTicketAlt, FaTIcketAlt } from 'react-icons/fa'
+import { FaQuestionCircle, FaTicketAlt } from 'react-icons/fa'
 
 function Home() {
     return (
