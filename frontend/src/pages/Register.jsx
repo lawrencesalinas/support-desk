@@ -64,7 +64,7 @@ function Register() {
 
     return (
         <>
-            <section className="heading">
+            <section className="heading" data-aos='zoom-in' >
                 <h1>
                     <FaUser />Register
                 </h1>
@@ -73,7 +73,7 @@ function Register() {
 
 
             {/* ---------------------Sign up form inputs -------------------------*/}
-            <section className="form">
+            <section className="form" data-aos='fade-up' >
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
                         <input type="text" className="form-control" name='name' id='name' value={name} onChange={onChange} placeholder='Enter your name' required />

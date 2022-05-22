@@ -30,9 +30,9 @@ function Tickets() {
     return (
         <>
             <BackButton url='/' />
-            <h1>Tickets</h1>
+            <h1 data-aos='zoom-in'>Tickets</h1>
             <div className="tickets">
-                <div className="ticket-headings">
+                <div className="ticket-headings" data-aos='zoom-in'>
                     <div>Data</div>
                     <div>Product</div>
                     <div>Status</div>

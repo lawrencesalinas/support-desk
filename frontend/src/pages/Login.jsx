@@ -60,7 +60,7 @@ function Login() {
 
     return (
         <>
-            <section className="heading">
+            <section className="heading" data-aos='zoom-in' >
                 <h1>
                     <FaSignInAlt />Login
                 </h1>
@@ -68,7 +68,7 @@ function Login() {
             </section>
 
             {/* ------------Sign up form inputs ----------------------*/}
-            <section className="form">
+            <section className="form" data-aos='fade-up' >
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
                         <input type="email" className="form-control" name='email' id='email' value={email} onChange={onChange} placeholder='Enter your email' required />

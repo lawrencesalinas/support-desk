@@ -73,7 +73,7 @@ function Ticket() {
     }
 
     return (
-        <div className="ticket-page">
+        <div className="ticket-page" data-aos='fade-up' data-aos-delay='400'>
             <header className="ticket-header">
                 <BackButton url='/tickets' />
                 <h2>
